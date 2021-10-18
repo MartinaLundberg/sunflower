@@ -16,7 +16,5 @@ runcmd:
 - sudo pip3 install flask
 - sudo apt-get install -y zip unzip
 - sudo apt-get install -y python3-matplotlib
-- #sudo mkdir twitter
-- #sudo cd twitter
 - sudo cd /home/ubuntu
 - sudo git clone https://github.com/MartinaLundberg/sunflower.git
