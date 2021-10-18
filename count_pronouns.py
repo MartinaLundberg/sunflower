@@ -69,11 +69,11 @@ def make_plot(pron):
 def find_pronouns():
     
     stat = {'han': 0,'hon': 0,'den': 0,'det': 0,'denna': 0,'denne': 0,'hen': 0,'total': 0}
-    data = os.listdir("data")
+    data = os.listdir("data_small")
    
     for file in data:
         
-        data_files = 'data/' + file
+        data_files = 'datans/' + file
         save_text = []
         
         #open file in data
