@@ -49,11 +49,13 @@ def make_plot(pron):
     
     total = pron['total']
     pron.pop('total')
+    #Normalize pronouns with total amount of non retweeted tweets
     new = {k: v / total for k, v in pron.items()}
     
     stats = pron.keys()
     count = new.values()
-
+    
+    #create barplot
     fig, figbar = plt.subplots(figsize = (8,6))
     fig.patch.set_facecolor('#FFFAFA')
     figbar.bar(stats, count, color = "#BC8F8F")
